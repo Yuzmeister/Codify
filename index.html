@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/forms-min.css">
+
+<link rel="import" href="..login/polymer/polymer.html"> 
+<link rel="import" href="..login/sm-ui-core/sm-ui-core.html"> 
+<link rel="import" href="..login/sm-ui-modal/sm-ui-modal.html"> 
+<link rel="import" href="..login/sm-ui-button/sm-ui-button.html"> 
+   
+<script src="https://app.simpla.io"></script>
+<script>
+  Simpla('HJ1l8M3v'),
+ elements: [
+    'https://elements.simpla.io/simpla-block/simpla-block.html',
+    'https://elements.simpla.io/simpla-text/simpla-text.html',
+    'https://elements.simpla.io/simpla-img/simpla-img.html',
+    'https://elements.simpla.io/sm-admin/sm-admin.html'
+  ]
+})
+</script>
+    <script src="https://app.simpla.io"></script>
+    <script>
+      Simpla('HJ1l8M3v');
+    </script>
+  </head>
+  <body>
+<a id="simple-menu" href="#sidr"><img src="http://codify.site/img/menu.png"></img></a>
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+    <li class="active"><a href="#">PROJECT</a></li>
+    <li><a href="#">DATA</a></li>
+    <li><a href="#">BUILDER APPS</a></li>
+    <li><a href="#">CONTENT APPS</a></li>
+    <li><a href="#">SOCIAL APPS</a></li>
+  </ul>
+</div>
+<div>
+
+
+
+
+</div>
+
+    <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#left-menu').sidr({
+      name: 'sidr-left',
+      side: 'left' // By default
+    });
+    $('#right-menu').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+    $('#existing-content-menu').sidr({
+      name: 'sidr-existing-content',
+      source: '#demoheader, #demo-content'
+    });
+    $('#sidr-content').sidr({
+      name: 'sidr-content',
+      source: 'http://codify.site/cms/'
+    });
+    $('#callback-menu').sidr({
+      name: 'sidr-callback',
+      source: function(name) {
+        return '<h1>' + name + ' MENU</h1><p><a href="http://codify.site/cms"><strong>CMS</strong></a></p>';
+      }
+    });
+});
+</script>
+<script src="https://app.simpla.io"></script>
+<script>
+Simpla('HJ1l8M3v')
+window.simpla = Simpla('HJ1l8M3v');
+$ Authenticate a user with login()
+simpla
+  .login({
+    email: '...', 
+    password: '...'
+  })
+  .then(function(token) {
+    // Login successful
+  })
+  .catch(function(error) {
+    // Login failed
+  });
+</script>
+
+</body>
+</html>
